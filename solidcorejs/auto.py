@@ -1,6 +1,6 @@
 import os
 
-os.chdir('D:\[Github]\SolidCoreJS\solidcorejs')
+os.chdir('D:\[Github]\SolidCoreJS.github.io\solidcorejs')
 
 print('')
 

@@ -682,11 +682,11 @@ function initNAV() {
 
 
 function ROS() {
-    let ros_top = "100px";
+    let ros_top = "120px";
     let ros_transition = "all ease 0.8s";
 
     let ros = document.querySelectorAll(".ros");
-    const vh = Math.max(
+    let vh = Math.max(
         document.documentElement.clientHeight || 0,
         window.innerHeight || 0
     );
@@ -716,6 +716,9 @@ function ROS() {
             if (ros[i] == undefined) { break };
             let rect = ros[i].getBoundingClientRect();
             //
+            // if (i === 0) {
+            //     console.log(rect.top - vh);
+            // }
             if (rect.top - vh < 0) {
                 ros[i].style.top = "0";
                 ros[i].style.opacity = "1.0";
