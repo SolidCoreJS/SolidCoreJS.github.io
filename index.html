@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/logo.png" sizes="any" type="image/svg+xml">
+    <title>SolidCoreJS</title>
+    <meta name="description" content="The most easy-to-use plugins for your desired website.">
+    <meta name="keywords"
+        content="HTML, CSS, JavaScript, web, UI, plugin, library, easy, frontend, lightweight, responsive">
+    <meta name="author" content="Bui Quang Bao">
+    <meta name="robots" content="index, follow">
+
+    <!-- SolidCoreJS -->
+    <script src="./solidcorejs/solidcore.js"></script>
+
+    <!-- CodeMirroe -->
+    <link rel="stylesheet" href="./codemirror/lib/codemirror.css">
+    <script src="./codemirror/lib/codemirror.js"></script>
+    <script src="./codemirror/mode/javascript/javascript.js"></script>
+    <script src="./codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="./codemirror/mode/xml/xml.js"></script>
+    <script src="./codemirror/mode/javascript/javascript.js"></script>
+    <script src="./codemirror/mode/css/css.js"></script>
+    <link rel="stylesheet" href="./codemirror/theme/ayu-mirage.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- Nav Bar -->
+    <!-- 
+        Properties:
+            nav-position: sticky/relative
+            links-position: left/center/right
+            gap: space beetween 2 links
+    -->
+    <nav nav-position="sticky" links-position="center" gap="8px 36px">
+        <div class="main">
+            <div class="nav-title">
+                <a href="/">
+                    <img src="./assets/logo.png" height="32px" alt="" style="float: left;">
+                    <h1 style="float: left;">&nbsp;SolidCoreJS</h1>
+                </a>
+            </div>
+            <div class="nav-links">
+                <div class="nav-content">
+                    <a href="#installation">Installation</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#documentation">Documentation</a>
+                    <a href="#sponsor">Sponsor</a>
+                    <!-- <div class="nav-sub-wrap">
+                        <a href="#" class="nav-sub">Sponsor</a>
+                        <div class="nav-sub-links">
+                            <div class="nav-sub-bg">
+                                <a href="/">RWD - Responsive Web Design</a>
+                                <a href="/">NAV - Navigation Menu</a>
+                                <a href="/">STT - Scroll To Top</a>
+                                <a href="/">MDI - Modal Image</a>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <a href="#installation">
+                <button class="cta nav-cta">
+                    Get Started
+                </button>
+            </a>
+            <div class="nav-button"></div>
+        </div>
+    </nav>
+
+
+    <!-- =================== Section: Header =================== -->
+    <section class="main">
+        <header>
+            <div class="row">
+                <div class="col-6">
+                    <h2 class="header-title">
+                        The most
+                        <span style="color: var(--theme-1);">easy-to-use</span>
+                        plugins<br>
+                        for your desired website
+                    </h2>
+                    <p class="header-description">
+                        Simple plugins that handle the hard work for you
+                    </p>
+                    <div class="desktop-only">
+                        <a href="#installation">
+                            <button class="cta">
+                                Get started
+                            </button>
+                        </a>
+                        <a href="#documentation">
+                            <button class="cta"
+                                style="background: #ffffff00; color: #000000; border: solid 1px #000000;">
+                                Documentation
+                            </button>
+                        </a>
+                    </div>
+                    <div class="mobile-only">
+                        <a href="#installation">
+                            <button class="cta">
+                                Get started
+                            </button>
+                        </a>
+                    </div>
+                    <ul class="header-features">
+                        <li>
+                            Available end-user features
+                        </li>
+                        <li>
+                            Lightweight libraries
+                        </li>
+                        <li>
+                            High compatibility
+                        </li>
+                    </ul>
+                    <div class="mobile-only" style="width: 1px; height: 15vh;"></div>
+                </div>
+                <div class="col-6 desktop-only">
+                    <div class="header-image" title="Drag me!">
+                        <canvas id="canvas3d"></canvas>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <!-- =================== Section: Compatible =================== -->
+    <section class="compatible">
+        <p class="compatible-title">
+            Well compatible with
+        </p>
+        <div class="compatible-list center-x">
+            <div class="row" gap="36px" type="center">
+                <div class="col">
+                    <img src="./assets/react.png" alt="">
+                </div>
+                <div class="col">
+                    <img src="./assets/vue.png" alt="">
+                </div>
+                <div class="col">
+                    <img src="./assets/angular.png" alt="">
+                </div>
+                <div class="col">
+                    <img src="./assets/svelte.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================== Section: Installation =================== -->
+    <div id="installation"></div>
+    <section class="main" style="margin-top: 20vh;">
+        <h2 class="section-title ">
+            Installation
+        </h2>
+        <p class="section-description ">
+            Just 2 steps to bring SolidCoreJS into your project
+        </p>
+        <div class="row" gap="48px" style="margin-top: 10vh;">
+            <div class="col-2">
+                &nbsp;
+            </div>
+            <div class="col-8">
+                <div class="">
+                    <h3 class="install-title">
+                        Step 1
+                    </h3>
+                    <p class="install-description">
+                        Import SolidCoreJS inside &lt;head> tag.
+                    </p>
+                    <textarea class="myTextArea">
+    <head>
+        <!-- Add the line below in &lt;head> tag -->
+        <script src="https://unpkg.com/solidcorejs@2.0.2/solidcore.js"></script>
+    </head></textarea>
+                </div>
+                <div class="">
+                    <h3 class="install-title" style="margin-top: 24px;">
+                        Step 2
+                    </h3>
+                    <p class="install-description">
+                        Initialize SolidCoreJS before &lt;/body> tag.
+                    </p>
+                    <textarea class="myTextArea">
+    &lt;body>
+        <!-- Add 3 lines below RIGHT BEFORE &lt;/body> tag -->
+        <script>
+            initSolidCoreJS();
+        </script>
+    &lt;/body></textarea>
+                </div>
+
+            </div>
+            <div class="col-2">
+                &nbsp;
+            </div>
+        </div>
+    </section>
+
+    <!-- =================== Section: Pricing =================== -->
+    <div id="pricing"></div>
+    <section class="main" style="margin-top: 20vh;">
+        <h2 class="section-title ">
+            Pricing
+        </h2>
+        <p class="section-description ">
+            There are 3 options for using SolidCoreJS
+        </p>
+        <div class="row pricing " gap="36px" style="margin-top: 10vh;">
+            <div class="col-2">
+                &nbsp;
+            </div>
+            <div class="col-4">
+                <ul>
+                    <p class="pricing-name">
+                        Standard
+                    </p>
+                    <p class="pricing-description">
+                        For personal use
+                    </p>
+                    <p class="pricing-price">
+                        $0<span>/year</span>
+                    </p>
+                    <li>
+                        Personal use
+                    </li>
+                    <li>
+                        All plugins
+                    </li>
+                    <li>
+                        Source code access
+                    </li>
+                    <div style="height: 77px;"></div>
+                    <a href="#documentation">
+                        <button class="cta">
+                            Start now
+                        </button>
+                    </a>
+                </ul>
+            </div>
+            <div class="col-4">
+                <ul>
+                    <p class="pricing-name">
+                        Professional
+                    </p>
+                    <p class="pricing-description">
+                        For commercial use
+                    </p>
+                    <p class="pricing-price">
+                        $0<span>/year *</span>
+                    </p>
+                    <li>
+                        Commercial use
+                    </li>
+                    <li>
+                        All plugins
+                    </li>
+                    <li>
+                        Source code access
+                    </li>
+                    <li>
+                        Can contribute source code
+                    </li>
+                    <div style="height: 38px;"></div>
+                    <a href="mailto:quangbao.dev@gmail.com">
+                        <button class="cta">
+                            * Notify us and use
+                        </button>
+                    </a>
+                </ul>
+            </div>
+            <div class="col-4">
+                <ul>
+                    <p class="pricing-name">
+                        Sponsor
+                    </p>
+                    <p class="pricing-description">
+                        If you love SolidCoreJS
+                    </p>
+                    <p class="pricing-price">
+                        $1<span>or more</span>
+                    </p>
+                    <li>
+                        Commercial use
+                    </li>
+                    <li>
+                        All plugins
+                    </li>
+                    <li>
+                        Source code access
+                    </li>
+                    <li>
+                        Can contribute source code
+                    </li>
+                    <li>
+                        Our thanks
+                    </li>
+                    <a href="#sponsor">
+                        <button class="cta">
+                            Become a Sponsor
+                        </button>
+                    </a>
+                </ul>
+            </div>
+            <div class="col-2">
+                &nbsp;
+            </div>
+        </div>
+    </section>
+
+    <!-- =================== Section: Documentation =================== -->
+    <div id="documentation"></div>
+    <div class="mobile-only">
+        <div class="main">
+            Please view the documentation on desktop device! Thanks!
+        </div>
+    </div>
+    <section class="main desktop-only" style="margin-top: 20vh;">
+        <h2 class="section-title ">
+            All Plugins
+        </h2>
+        <p class="section-description ">
+            Simple plugins that handle the hard work for you
+        </p>
+        <!------------------ Responsive Web Design -------------------->
+        <div class="row plugin " style="padding-top: 15vh;" id="rwd">
+            <div class="col-6 demo">
+                <!-- Type: justify-content -->
+                <div class="row demo-rwd" gap="6px" type="start">
+                    <div class="col-6">
+                        This is column A
+                    </div>
+                    <div class="col-6">
+                        This is column B
+                    </div>
+                </div>
+                <div class="row demo-rwd" gap="6px" type="start">
+                    <div class="col-6">
+                        col-6
+                    </div>
+                    <div class="col-6">
+                        col-6
+                    </div>
+                </div>
+                <div class="row demo-rwd" gap="6px" type="start">
+                    <div class="col-4">
+                        col-4
+                    </div>
+                    <div class="col-4">
+                        col-4
+                    </div>
+                    <div class="col-4">
+                        col-4
+                    </div>
+                </div>
+                <div class="row demo-rwd" gap="6px" type="start">
+                    <div class="col-3">
+                        col-3
+                    </div>
+                    <div class="col-3">
+                        col-3
+                    </div>
+                    <div class="col-3">
+                        col-3
+                    </div>
+                    <div class="col-3">
+                        col-3
+                    </div>
+                </div>
+                <div class="row demo-rwd" gap="6px" type="start">
+                    <div class="col-2">
+                        col-2
+                    </div>
+                    <div class="col-2">
+                        col-2
+                    </div>
+                    <div class="col-2">
+                        col-2
+                    </div>
+                    <div class="col-2">
+                        col-2
+                    </div>
+                    <div class="col-2">
+                        col-2
+                    </div>
+                    <div class="col-2">
+                        col-2
+                    </div>
+                </div>
+                <div class="row demo-rwd" gap="6px" type="start">
+                    <div class="col-1">
+                        col-1
+                    </div>
+                    <div class="col-1">
+                        col-1
+                    </div>
+                    <div class="col-1">
+                        col-1
+                    </div>
+                    <div class="col-1">
+                        col-1
+                    </div>
+                    <div class="col-1">
+                        col-1
+                    </div>
+                    <div class="col-1">
+                        col-1
+                    </div>
+                    <div class="col-1">
+                        col-1
+                    </div>
+                    <div class="col-1">
+                        col-1
+                    </div>
+                    <div class="col-1">
+                        col-1
+                    </div>
+                    <div class="col-1">
+                        col-1
+                    </div>
+                    <div class="col-1">
+                        col-1
+                    </div>
+                    <div class="col-1">
+                        col-1
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <h3 class="plugin-title">
+                    Responsive Web Design System
+                </h3>
+                <p class="plugin-description">
+                    Make your site responsive on multiple devices using the 12 columns grid system. Each column will
+                    expand to 100% width when on mobile device.
+                </p>
+                <textarea class="myTextArea">
+    <!-- Structure -->
+    <div class="row">
+        <div class="col-6">
+            This is column A
+        </div>
+        <div class="col-6">
+            This is column B
+        </div>
+    </div></textarea>
+            </div>
+        </div>
+        <!------------------ Modal Image -------------------->
+        <div class="row plugin" id="mdi">
+            <div class="col-6 demo demo-mdi">
+                <img class="mdi" src="./assets/photo-1.png" style="border-radius: 4px;">
+                <img class="mdi" src="./assets/photo-2.png" style="border-radius: 4px;">
+            </div>
+            <div class="col-6">
+                <h3 class="plugin-title">
+                    Modal Image
+                </h3>
+                <p class="plugin-description">
+                    Automatically add the image-popup function to your images with just one "mdi" class. No need to
+                    worry about modal images anymore!
+                </p>
+                <textarea class="myTextArea">
+    <!-- Add class "mdi" to your img tag -->
+    <img src="photo-1.png" class="mdi">
+    <img src="photo-2.png" class="mdi"></textarea>
+            </div>
+        </div>
+        <!------------------ Reveal On Scroll -------------------->
+        <div class="row plugin ros" id="ros">
+            <div class="col-6 demo center">
+                Do you see the <b>&nbsp;floating animation</b>?!
+            </div>
+            <div class="col-6">
+                <h3 class="plugin-title">
+                    Reveal On Scroll Animation
+                </h3>
+                <p class="plugin-description">
+                    Easily add floating-from-bottom animation on user-scrolling to your div with just one "ros" class.
+                </p>
+                <textarea class="myTextArea">
+    <!-- Add class "" -->
+    <div class="ros"></div>
+    <div class="ros"></div>
+    <div class="ros"></div></textarea>
+            </div>
+        </div>
+        <!------------------ Center -------------------->
+        <div class="row plugin" id="cen">
+            <div class="col-6 demo">
+                <div class="row demo-cen" gap="4px">
+                    <div class="col">
+                        <div class="center">
+                            <div style="background: #242424; color: white; padding: 4px 12px; border-radius: 4px;">
+                                center
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="center-x">
+                            <div
+                                style="background: #242424; color: white; padding: 4px 12px; border-radius: 4px; height: 30px;">
+                                center-x
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="center-y">
+                            <div style="background: #242424; color: white; padding: 4px 12px; border-radius: 4px;">
+                                center-y
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <h3 class="plugin-title">
+                    Center
+                </h3>
+                <p class="plugin-description">
+                    All you need to center everything. There are 3 mode: center-x horizontally, center-y vertically and
+                    center for both direction.
+                </p>
+                <textarea class="myTextArea">
+    <!-- Add class "center"/"center-x"/"center-y" -->
+    <div class="center"></div>
+    <div class="center-x"></div>
+    <div class="center-y"></div></textarea>
+            </div>
+        </div>
+        <!------------------ Scroll to top -------------------->
+        <div class="row plugin" id="stt">
+            <div class="col-6 demo center">
+                Look at the button at the bottom-right corner of this website.
+            </div>
+            <div class="col-6">
+                <h3 class="plugin-title">
+                    Scroll To Top Button
+                </h3>
+                <p class="plugin-description">
+                    You know what is a scroll-to-top button, right? From now, that button won't bother you anymore.
+                </p>
+                <textarea class="myTextArea">
+    <!-- 
+        A scroll-to-top button will be imported automatically.
+        You don't need to do anything! 
+    --></textarea>
+            </div>
+        </div>
+        <!------------------ Display Restriction on Devices -------------------->
+        <div class="row plugin" id="drd">
+            <div class="col-6 demo center">
+                <div class="desktop-only">You can see this line only on DESKTOP 💻</div>
+                <div class="mobile-only">You can see this line only on MOBILE 📱</div>
+            </div>
+            <div class="col-6">
+                <h3 class="plugin-title">
+                    Display Restriction on Devices
+                </h3>
+                <p class="plugin-description">
+                    There are a lot of media query with max-width and min-width in your code? Destroy them using these
+                    two simple
+                    classes!
+                </p>
+                <textarea class="myTextArea">
+    <div class="desktop-only">
+        You can see this line only on DESKTOP 💻
+    </div>
+    <div class="mobile-only">
+        You can see this line only on MOBILE 📱
+    </div></textarea>
+            </div>
+        </div>
+        <!------------------ Anti-copy -------------------->
+        <div class="row plugin" id="acp">
+            <div class="col-6 demo center">
+                <div>
+                    <div>Hello, this line can be easily copied. 😥</div>
+                    <div class="acp">But this line CAN'T be easily copied! 😈</div>
+                </div>
+            </div>
+            <div class="col-6">
+                <h3 class="plugin-title">
+                    Anti-copy
+                </h3>
+                <p class="plugin-description">
+                    There is NO absolute way to prevent any website's content from being copied. However, we can
+                    make it harder for other people to copy our content.
+                </p>
+                <textarea class="myTextArea">
+    <div>
+        Hello, this line can be easily copied. 😥
+    </div>
+    <div class="acp">
+        But this line CAN'T be easily copied! 😈
+    </div></textarea>
+            </div>
+        </div>
+        <!------------------ Safe Links to Destination -------------------->
+        <div class="row plugin" id="sld">
+            <div class="col-6 demo center">
+                No demo 😁
+            </div>
+            <div class="col-6">
+                <h3 class="plugin-title">
+                    Safe Links to Destination
+                </h3>
+                <p class="plugin-description">
+                    Every link with target="_blank" in your website will be added rel="noopener noreferrer"
+                    automatically.
+                </p>
+                <textarea class="myTextArea">
+    <!-- 
+        This will be done automatically.
+        You don't need to do anything! 
+    --></textarea>
+            </div>
+        </div>
+        <!------------------ Navigation -------------------->
+        <div class="row plugin" id="nav">
+            <div class="col-6 demo center">
+                Look at this website's top navigation!
+            </div>
+            <div class="col-6 demo-code-nav">
+                <h3 class="plugin-title">
+                    Top Navigation (multi-function + responsive)
+                </h3>
+                <p class="plugin-description">
+                    nav-position: sticky/relative<br>
+                    links-position: left/center/right<br>
+                    gap: space between links<br>
+                </p>
+                <textarea class="myTextArea">
+    <nav nav-position="sticky" links-position="center"
+         gap="8px 36px">
+        <div class="main">
+            <div class="nav-title">
+                <h1>Your site's name</h1>
+            </div>
+            <div class="nav-links">
+                <div class="nav-content">
+                    <a href="/">Link 01</a>
+                    <a href="/">Link 02</a>
+                    <div class="nav-sub-wrap">
+                    <a href="#" class="nav-sub">Sub-links</a>
+                    <div class="nav-sub-links">
+                        <div class="nav-sub-bg">
+                            <a href="/">Sub-link 01</a>
+                            <a href="/">Sub-link 02</a>
+            </div></div></div></div></div>
+            <button class="cta nav-cta">
+                Your CTA Button
+            </button>
+            <div class="nav-button"></div>
+        </div>
+    </nav></textarea>
+            </div>
+        </div>
+        <!------------------ Dark-mode -------------------->
+        <div class="row plugin" id="drk">
+            <div class="col-6 demo center">
+                <div id="darkmode"></div>
+            </div>
+            <div class="col-6">
+                <h3 class="plugin-title">
+                    Dark-mode (not recommended)
+                </h3>
+                <p class="plugin-description">
+                    Add only one line and you have dark-mode function. Really? However, this plugin is not recommended
+                    because
+                    not every site is similar to each other.
+                </p>
+                <textarea class="myTextArea">
+    <!-- Add this line where you want to put the button -->
+    <div id="darkmode"></div>
+
+    <!-- If you want to disable dark-mode at a div -->
+    <div class="darkmode-ignore"></div></textarea>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================== Section: Sponsor =================== -->
+    <div id="sponsor"></div>
+    <section class="main sponsor" style="margin-top: 25vh;">
+        <h2 class="section-title ">
+            Become our Sponsor/Backer
+        </h2>
+        <p class="section-description ">
+            You can sponsor us directly or mail us to find the best way we can receive your support!
+        </p>
+        <div class="center-x">
+            <a href="https://nhantien.momo.vn/buiquangbao" target="_blank">
+                <button class="cta">
+                    Directly
+                </button>
+            </a>
+            <a href="mailto:quangbao.dev@gmail.com" target="_blank">
+                <button class="cta">
+                    Mail us
+                </button>
+            </a>
+        </div>
+
+
+    </section>
+
+
+
+    <div style="width: 1px; height: 25vh;"></div>
+
+    <!-- =================== Section: Footer =================== -->
+    <footer>
+        <div class="main">
+            <div class="row">
+                <div class="col-4">
+                    <a href="/">
+                        <img src="./assets/logo.png" height="44px" alt="" style="float: left;">
+                        <h1 style="font-size: 28px; float: left;">&nbsp;SolidCoreJS</h1>
+                    </a>
+                    <br><br>
+
+                </div>
+                <div class="col-3">
+                    <p class="footer-title">All Plugins</p>
+                    <ul>
+                        <li>
+                            <a href="#rwd">Responsive Web Design</a>
+                        </li>
+                        <li>
+                            <a href="#ros">Reveal on Scroll</a>
+                        </li>
+                        <li>
+                            <a href="#mdi">Modal Image</a>
+                        </li>
+                        <li>
+                            <a href="#stt">Scroll to Top</a>
+                        </li>
+                        <li>
+                            <a href="#cen">Center</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <p class="footer-title">All Plugins</p>
+                    <ul>
+                        <li>
+                            <a href="#sld">Safe Links to Destination</a>
+                        </li>
+                        <li>
+                            <a href="#drd">Display Restriction</a>
+                        </li>
+                        <li>
+                            <a href="#acp">Anti-copy</a>
+                        </li>
+                        <li>
+                            <a href="#nav">Navigation</a>
+                        </li>
+                        <li>
+                            <a href="#drk">Darkmode</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <p class="footer-title">Resources</p>
+                    <ul>
+                        <li>
+                            <a href="#installation">Installation</a>
+                        </li>
+                        <li>
+                            <a href="#documentation">Documentation</a>
+                        </li>
+                        <li>
+                            <a href="#pricing">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="https://buiquangbao.github.io/" target="_blank">Human.txt</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <p class="footer-title">Contact</p>
+                    <ul>
+                        <li>
+                            <a href="mailto:quangbao.dev@gmail.com">Email</a>
+                        </li>
+                        <li>
+                            <a href="mailto:quangbao.dev@gmail.com">LinkedIn</a>
+                        </li>
+                        <li>
+                            <a href="mailto:quangbao.dev@gmail.com">Instagram</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div style="width: 1px; height: 15vh;"></div>
+    <p style="text-align: center; font-size: 14px;">© SolidCoreJS</p>
+    <div style="width: 1px; height: 5vh;"></div>
+
+
+    <script>
+        initSolidCoreJS();
+    </script>
+    <script src="./3d/js/three.js"></script>
+    <script src="./3d/js/anime.js"></script>
+    <script src="./3d/js/spline.runtime.min.js"></script>
+    <script src="./3d/js/main.js"></script>
+    <script src="./codemirror/codemirror.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,801 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Spline I/O v0.0.1",
+        "version": "2.0"
+    },
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "SolidCoreJS",
+            "children": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "extensions": {
+                "SPE_node_3d": {
+                    "uuid": "266FA665-47A7-42CB-89BC-FAEB650FE193",
+                    "type": "scene"
+                }
+            }
+        },
+        {
+            "name": "Sphere",
+            "translation": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "extensions": {
+                "SPE_node_3d": {
+                    "uuid": "DD1443FC-B85C-4C65-8598-D8BA26F7144C",
+                    "type": "mesh_3d",
+                    "visible": true,
+                    "interaction": 0,
+                    "hiddenMatrix": [
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "castShadow": true,
+                    "receiveShadow": true,
+                    "isCloner": false
+                }
+            },
+            "mesh": 0
+        },
+        {
+            "name": "Default Camera",
+            "camera": 0,
+            "translation": [
+                62.05029543215453,
+                -76.23255338476724,
+                995.157454195674
+            ],
+            "rotation": [
+                0.038125548299640676,
+                0.031108125450005637,
+                -0.0011874536234390296,
+                0.9987879239617041
+            ],
+            "extensions": {
+                "SPE_node_3d": {
+                    "uuid": "22B8BD69-2B12-42EC-95FD-696F490BA627",
+                    "type": "camera",
+                    "visible": true,
+                    "interaction": 1
+                }
+            },
+            "children": [
+                5
+            ]
+        },
+        {
+            "name": "Default Ambient Light",
+            "extensions": {
+                "KHR_lights_punctual": {
+                    "light": 0
+                },
+                "SPE_node_3d": {
+                    "uuid": "E46C878C-63FB-4810-81AA-51ABCC3B77A5",
+                    "type": "light",
+                    "visible": true
+                }
+            }
+        },
+        {
+            "name": "Rectangle",
+            "translation": [
+                0,
+                0,
+                -500
+            ],
+            "rotation": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "extensions": {
+                "SPE_node_3d": {
+                    "uuid": "0B1F5088-3939-4668-B206-0799ED19E407",
+                    "type": "mesh_2d",
+                    "visible": true,
+                    "interaction": 2,
+                    "hiddenMatrix": [
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "castShadow": true,
+                    "receiveShadow": true,
+                    "isCloner": false
+                }
+            },
+            "mesh": 1
+        },
+        {
+            "name": "Default Directional Light",
+            "translation": [
+                850000,
+                1300000,
+                1000000
+            ],
+            "rotation": [
+                -0.45895513091666534,
+                0.1367267597249462,
+                -0.25064115022945466,
+                0.8413352451859125
+            ],
+            "extensions": {
+                "KHR_lights_punctual": {
+                    "light": 1
+                },
+                "SPE_node_3d": {
+                    "uuid": "14AFBD84-D98D-4BCC-9972-EE04AAF8929D",
+                    "type": "light",
+                    "visible": true,
+                    "interaction": -1,
+                    "hiddenMatrix": [
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1
+                    ]
+                }
+            }
+        }
+    ],
+    "cameras": [
+        {
+            "type": "orthographic",
+            "orthographic": {
+                "xmag": 1536,
+                "ymag": 811,
+                "zfar": 50000,
+                "znear": -50000
+            },
+            "extensions": {
+                "SPE_camera_options": {
+                    "zoom": 1
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "primitives": [],
+            "extensions": {
+                "SPE_primitive": {
+                    "parameters": {
+                        "width": 400,
+                        "widthSegments": 20,
+                        "heightSegments": 20,
+                        "phiStart": 0,
+                        "phiLength": 6.283185307179586,
+                        "thetaStart": 0,
+                        "thetaLength": 3.141592653589793,
+                        "height": 400,
+                        "depth": 400
+                    },
+                    "type": "SphereGeometry"
+                },
+                "SPE_material": {
+                    "indices": [
+                        0
+                    ]
+                }
+            }
+        },
+        {
+            "primitives": [],
+            "extensions": {
+                "SPE_primitive": {
+                    "parameters": {
+                        "width": 460,
+                        "depth": 0,
+                        "cornerRadius": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "cornerType": 1,
+                        "extrudeDepth": 0,
+                        "extrudeBevelSize": 0,
+                        "extrudeBevelSegments": 1,
+                        "height": 460
+                    },
+                    "ui": {
+                        "enabledIndieCorners": false
+                    },
+                    "type": "RectangleGeometry"
+                },
+                "SPE_material": {
+                    "indices": [
+                        1
+                    ]
+                }
+            }
+        }
+    ],
+    "materials": [
+        {
+            "name": "",
+            "alphaMode": "BLEND",
+            "alphaCutoff": 1,
+            "doubleSided": false,
+            "extensions": {
+                "KHR_materials_common": {
+                    "technique": "BLINN",
+                    "ambient": [
+                        0.6980392156862745,
+                        0.3333333333333333,
+                        1
+                    ],
+                    "diffuse": [
+                        0.6980392156862745,
+                        0.3333333333333333,
+                        1
+                    ],
+                    "specular": [
+                        0.06666666666666667,
+                        0.06666666666666667,
+                        0.06666666666666667
+                    ],
+                    "shininess": 43,
+                    "emission": [
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                "SPE_materials_options": {
+                    "side": 0,
+                    "wireframe": true,
+                    "visible": true,
+                    "shadingMode": 2
+                },
+                "SPE_materials_layers": {
+                    "layers": [
+                        {
+                            "id": 0,
+                            "type": "color",
+                            "uniforms": {
+                                "alpha": {
+                                    "name": "alpha",
+                                    "value": 1,
+                                    "type": 1
+                                },
+                                "mode": {
+                                    "name": "mode",
+                                    "value": 0,
+                                    "type": 1
+                                },
+                                "color": {
+                                    "name": "color",
+                                    "value": [
+                                        0.5019607843137255,
+                                        0.5019607843137255,
+                                        0.5019607843137255
+                                    ],
+                                    "type": 6
+                                }
+                            }
+                        },
+                        {
+                            "id": 1,
+                            "type": "light",
+                            "uniforms": {
+                                "alpha": {
+                                    "name": "alpha",
+                                    "value": 1,
+                                    "type": 1
+                                },
+                                "mode": {
+                                    "name": "mode",
+                                    "value": 3,
+                                    "type": 1
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "",
+            "alphaMode": "BLEND",
+            "alphaCutoff": 1,
+            "doubleSided": false,
+            "extensions": {
+                "KHR_materials_common": {
+                    "technique": "CONSTANT",
+                    "ambient": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                "SPE_materials_options": {
+                    "side": 0,
+                    "wireframe": false,
+                    "visible": true,
+                    "shadingMode": 2
+                },
+                "SPE_materials_layers": {
+                    "layers": [
+                        {
+                            "id": 0,
+                            "type": "color",
+                            "uniforms": {
+                                "alpha": {
+                                    "name": "alpha",
+                                    "value": 0,
+                                    "type": 1
+                                },
+                                "mode": {
+                                    "name": "mode",
+                                    "value": 0,
+                                    "type": 1
+                                },
+                                "color": {
+                                    "name": "color",
+                                    "value": [
+                                        1,
+                                        1,
+                                        1
+                                    ],
+                                    "type": 6
+                                }
+                            }
+                        },
+                        {
+                            "id": 1,
+                            "type": "light",
+                            "uniforms": {
+                                "alpha": {
+                                    "name": "alpha",
+                                    "value": 1,
+                                    "type": 1
+                                },
+                                "mode": {
+                                    "name": "mode",
+                                    "value": 0,
+                                    "type": 1
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "extensions": {
+        "SPE_export_options": {
+            "generatorFormat": 1,
+            "useOrbitControls": true,
+            "bgColor": [
+                0.09803921568627451,
+                0.09803921568627451,
+                0.09803921568627451
+            ],
+            "bgAlpha": 0,
+            "orbitDamped": true,
+            "orbitTarget": [
+                1.7763568394002505e-14,
+                5.684341886080802e-14,
+                6.821210263296962e-13
+            ],
+            "cameraType": "OrthographicCamera",
+            "cameraRotate": true,
+            "cameraPan": false,
+            "cameraZoom": false,
+            "viewMode": 1,
+            "viewWidth": 512,
+            "viewHeight": 512,
+            "quality": "default"
+        },
+        "SPE_scene_options": {
+            "camera": {
+                "mainCameraIndex": 2
+            },
+            "postProcessing": {
+                "enabled": false,
+                "data": {
+                    "enabled": false,
+                    "bloom": {
+                        "enabled": false,
+                        "opacity": 1,
+                        "blendFunction": 16,
+                        "intensity": 1,
+                        "luminanceThreshold": 0.9,
+                        "luminanceSmoothing": 0.025,
+                        "blurScale": 1,
+                        "kernelSize": 3
+                    },
+                    "chromaticAberration": {
+                        "enabled": false,
+                        "opacity": 1,
+                        "blendFunction": 13,
+                        "offset": [
+                            10,
+                            10
+                        ]
+                    },
+                    "vignette": {
+                        "enabled": false,
+                        "opacity": 1,
+                        "blendFunction": 13,
+                        "eskil": false,
+                        "darkness": 0.5,
+                        "offset": 0.5
+                    },
+                    "noise": {
+                        "enabled": false,
+                        "opacity": 1,
+                        "blendFunction": 14
+                    },
+                    "colorAverage": {
+                        "enabled": false,
+                        "opacity": 1,
+                        "blendFunction": 13
+                    },
+                    "hueSaturation": {
+                        "enabled": false,
+                        "opacity": 1,
+                        "blendFunction": 13,
+                        "_hue": 0,
+                        "hue": 0,
+                        "saturation": 0
+                    },
+                    "brightnessContrast": {
+                        "enabled": false,
+                        "opacity": 1,
+                        "blendFunction": 13,
+                        "contrast": 0,
+                        "brightness": 0
+                    },
+                    "depthOfField": {
+                        "enabled": false,
+                        "opacity": 1,
+                        "blendFunction": 13,
+                        "focalLength": 0.1,
+                        "focusDistance": 0,
+                        "bokehScale": 1
+                    },
+                    "pixelation": {
+                        "enabled": false,
+                        "opacity": 1,
+                        "blendFunction": 13,
+                        "granularity": 30
+                    }
+                }
+            }
+        },
+        "SPE_interactions": {
+            "interactions": [
+                {
+                    "uuid": "1B8F047B-E15F-49C6-8E15-6A1A86E3191F",
+                    "selectedState": 0,
+                    "states": [
+                        "968E6367-F664-4111-B2B9-4F8F7315DD24",
+                        "97F97D4E-E002-4E3E-90AC-1918ED4E0C50"
+                    ],
+                    "events": [
+                        {
+                            "type": 7,
+                            "ui": {
+                                "isCollapsed": false
+                            },
+                            "targets": [
+                                {
+                                    "easing": 0,
+                                    "duration": 30000,
+                                    "delay": 0,
+                                    "cubicControls": [
+                                        0.5,
+                                        0.05,
+                                        0.1,
+                                        0.3
+                                    ],
+                                    "springParameters": {
+                                        "mass": 2,
+                                        "stiffness": 80,
+                                        "damping": 10,
+                                        "velocity": 0
+                                    },
+                                    "repeat": true,
+                                    "object": "DD1443FC-B85C-4C65-8598-D8BA26F7144C",
+                                    "state": "97F97D4E-E002-4E3E-90AC-1918ED4E0C50"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "369FB9D3-62A4-4AC5-9EFA-6239F868AD80"
+                },
+                {
+                    "uuid": "E946AEEB-EBEF-4B19-BAF8-598FB75BCE4A"
+                }
+            ]
+        },
+        "SPE_interaction_states": {
+            "states": {
+                "968E6367-F664-4111-B2B9-4F8F7315DD24": {
+                    "uuid": "968E6367-F664-4111-B2B9-4F8F7315DD24",
+                    "name": "Base State",
+                    "position": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "rotation": [
+                        0,
+                        0,
+                        0,
+                        "XYZ"
+                    ],
+                    "scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "hiddenMatrix": [
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "geometry": {
+                        "width": 500,
+                        "height": 500,
+                        "depth": 500
+                    },
+                    "material": {
+                        "layersList": [
+                            {
+                                "id": 0,
+                                "type": "color",
+                                "defines": {},
+                                "uniforms": {
+                                    "f0_alpha": {
+                                        "value": 1
+                                    },
+                                    "f0_mode": {
+                                        "value": "0"
+                                    },
+                                    "f0_color": {
+                                        "value": 8421504
+                                    }
+                                }
+                            },
+                            {
+                                "id": 1,
+                                "type": "light",
+                                "defines": {},
+                                "uniforms": {
+                                    "f1_alpha": {
+                                        "value": 1
+                                    },
+                                    "f1_mode": {
+                                        "value": "3"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                "97F97D4E-E002-4E3E-90AC-1918ED4E0C50": {
+                    "uuid": "97F97D4E-E002-4E3E-90AC-1918ED4E0C50",
+                    "name": "State 1",
+                    "position": [
+                        0.42922210693359375,
+                        0,
+                        0
+                    ],
+                    "rotation": [
+                        0,
+                        -6.265732014659643,
+                        0,
+                        "XYZ"
+                    ],
+                    "scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "hiddenMatrix": [
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "geometry": {
+                        "width": 500,
+                        "height": 500,
+                        "depth": 500
+                    },
+                    "material": {
+                        "layersList": [
+                            {
+                                "id": 0,
+                                "type": "color",
+                                "defines": {},
+                                "uniforms": {
+                                    "f0_alpha": {
+                                        "value": 1
+                                    },
+                                    "f0_mode": {
+                                        "value": "0"
+                                    },
+                                    "f0_color": {
+                                        "value": 8421504
+                                    }
+                                }
+                            },
+                            {
+                                "id": 1,
+                                "type": "light",
+                                "defines": {},
+                                "uniforms": {
+                                    "f1_alpha": {
+                                        "value": 1
+                                    },
+                                    "f1_mode": {
+                                        "value": "3"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "SPE_textures_uuid_map": {},
+        "KHR_lights_punctual": {
+            "lights": [
+                {
+                    "type": "hemispheric",
+                    "name": "Default Ambient Light",
+                    "color": [
+                        0.8274509803921568,
+                        0.8274509803921568,
+                        0.8274509803921568
+                    ],
+                    "intensity": 0.75
+                },
+                {
+                    "type": "directional",
+                    "name": "Default Directional Light",
+                    "color": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "intensity": 0.75,
+                    "extensions": {
+                        "SPE_light_parameters": {
+                            "shadows": {
+                                "castShadow": false,
+                                "shadowmapSize": [
+                                    512,
+                                    512
+                                ],
+                                "shadowmapBias": 0,
+                                "shadowmapViewRight": 5,
+                                "shadowmapViewLeft": -5,
+                                "shadowmapViewTop": 5,
+                                "shadowmapViewBottom": -5,
+                                "shadowmapViewNear": 0.5,
+                                "shadowmapViewFar": 500
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "extensionsUsed": [
+        "SPE_node_3d",
+        "SPE_camera_options",
+        "SPE_light_parameters",
+        "SPE_materials_options",
+        "SPE_materials_layers",
+        "SPE_primitive",
+        "SPE_material",
+        "SPE_export_options",
+        "SPE_scene_options",
+        "SPE_interactions",
+        "SPE_interaction_states",
+        "SPE_textures_uuid_map",
+        "KHR_lights_punctual",
+        "KHR_materials_common"
+    ]
+}
