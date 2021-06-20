@@ -1,6 +1,6 @@
 {
   "name": "solidcorejs",
-  "version": "2.0.2",
+  "version": "2.0.5",
   "description": "Solid Core JS v2.0.0",
   "main": "index.js",
   "scripts": {

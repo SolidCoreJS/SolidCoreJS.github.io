@@ -34,6 +34,8 @@ function initRWD() {
             --main-width-1: 1100px;
             --main-width-2: 1300px;
             --main-width-3: 1500px;
+
+            --mobile-padding: 24px;
         }
         ` +
         // *
@@ -71,7 +73,7 @@ function initRWD() {
             .main {
                 padding: 0 var(--mobile-padding);
             }
-            .section {
+            section {
                 padding: 0 var(--mobile-padding);
             }
         }
