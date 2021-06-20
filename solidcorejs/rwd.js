@@ -66,6 +66,15 @@ function initRWD() {
                 width: min(100%, var(--main-width-3));
             }
         }
+
+        @media screen and (max-width: 1000px) {
+            .main {
+                padding: 0 var(--mobile-padding);
+            }
+            .section {
+                padding: 0 var(--mobile-padding);
+            }
+        }
         ` +
         // RWD
         `

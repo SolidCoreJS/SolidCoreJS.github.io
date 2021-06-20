@@ -4,16 +4,13 @@ body {
 
 * {
     font-family: 'Inter', sans-serif;
-    --mobile-pd: 24px;
+    --mobile-padding: 24px;
     --theme-1: #7A73FF;
 }
 
 @media screen and (max-width: 1000px) {
-    .main {
-        padding: 0 var(--mobile-pd);
-    }
     .nav-content {
-        padding: 0 var(--mobile-pd);
+        padding: 0 var(--mobile-padding);
     }
 }
 
@@ -97,10 +94,10 @@ header .cta {
 }
 @media screen and (max-width: 1000px) {
     .compatible {
-        padding: 50px var(--mobile-pd);
+        padding: 50px var(--mobile-padding);
     }
     .compatible img {
-        margin-left: calc(30vw - var(--mobile-pd));
+        margin-left: calc(30vw - var(--mobile-padding));
         width: 40vw;
         height: initial;
     }
