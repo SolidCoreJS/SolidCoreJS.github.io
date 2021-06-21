@@ -406,7 +406,7 @@ function initNAV() {
         nav {
             --default-height: 60px;
 
-            --nav-1: rgba(240, 240, 240, 0.8);
+            --nav-1: rgba(255, 255, 255, 0.8);
             --nav-2: blur(10.0px);
             --nav-3: 0 8px 32px 0 rgba(0, 0, 0, 0.02);
         
